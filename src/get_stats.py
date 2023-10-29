@@ -10,11 +10,6 @@ The script has to get the accuracy percentage from each file, and print it in a 
 
 import os, sys, shutil
 import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-
-TITLE = False # Set to False in order not to add a title to the plots
-UNNECESSARY_IMAGES = False # Set to False in order to avoid creating plots not needed for the paper
 
 # Read the parameters
 if len(sys.argv) != 3:
@@ -29,12 +24,6 @@ output_directory = os.path.join(output_folder)
 if os.path.exists(output_directory):
     shutil.rmtree(output_directory)
 os.makedirs(output_directory)
-
-# Get last two folders of the path as title
-title = str(os.path.basename(os.path.dirname(output_folder))) + "/" + str(os.path.basename(output_folder))
-# If the title ends with slash, remove it
-if title.endswith("/"):
-    title = title[:-1]
 
 # Get the list of tests (i.e. names of the subdiretories in the parent directory)
 tests = os.listdir(parent_directory)

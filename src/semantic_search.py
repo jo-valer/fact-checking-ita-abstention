@@ -27,10 +27,9 @@ def inference():
     args = parse_arguments()
 
     # Check the arguments
-    INPUT_TYPE, INPUT, examples_path, OUTPUT_PATH, N, THRESHOLD = check_args(args)
+    INPUT_TYPE, INPUT, dataset_path, OUTPUT_PATH, N, THRESHOLD = check_args(args)
         
     # Load the dataset
-    dataset_path = EXAMPLES_PATH
     dataset = pd.read_csv(dataset_path, sep="\t", header=0, quoting=csv.QUOTE_NONE, dtype={"label": str})
 
     # Map sentences to embeddings
@@ -90,7 +89,7 @@ def parse_arguments():
     parser.add_argument("input", help="Input claim or file containing claims") # Input: single string or file containing claims
 
     # Optional arguments
-    default_examples_path = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), "datasets", "religion_dataset_it", "all.tsv")
+    default_examples_path = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), "data", "controlsets", "train.tsv")
     parser.add_argument("--examples", help="Examples dataset", default=default_examples_path) # Examples: tsv file
     default_output_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "semantic_search_results")
     parser.add_argument("--output", help="Output folder where to save results", default=default_output_path) # Output: tsv file

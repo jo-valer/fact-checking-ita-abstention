@@ -51,7 +51,7 @@ for args in args_lists:
         if not os.path.exists(output_path):
             os.makedirs(output_path)
     print("\033[92m" + "Evaluating semantic_search with args: " + args + "\033[0m")
-    command = "python3 " + script + " " + input + " --lang it --examples " + examples_file + " --output " + output_path + " " + args
+    command = "python3 " + script + " " + input + " --examples " + examples_file + " --output " + output_path + " " + args
     # Run the script
     if SUPPRESS_OUTPUT:
         command += " > /dev/null"
