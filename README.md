@@ -35,7 +35,7 @@ In the `data/controlsets/` folder is the X-Fact dataset [(Gupta and Srikumar, 20
 - `train_dev_id_ood.tsv`: TRAIN + DEV + TEST<sub>id</sub> + TEST<sub>ood</sub>
 - `train_dev_ood.tsv`: TRAIN + DEV + TEST<sub>ood</sub>
 
-In the `data/testsets/` folder are the challenge test sets, annotated according to our claim ambiguity categorization (see the [paper](#) for more details). The columns `news-like` and `social-like` contain the rewritten versions of the original claim (i.e., column `claim`), whereas the `ambiguity` column indicates the ambiguity label for the claim. The files are the following:
+In the `data/testsets/` folder are the challenge test sets, annotated according to our claim ambiguity categorization (see the [paper](https://ceur-ws.org/Vol-3596/paper50.pdf) for more details). The columns `news-like` and `social-like` contain the rewritten versions of the original claim (i.e., column `claim`), whereas the `ambiguity` column indicates the ambiguity label for the claim. The files are the following:
 - `in_domain.tsv`: _in-domain_ test set (all genres: original, news-like, and social-like)
 - `out_of_domain.tsv`: _out-of-domain_ test set (all genres: original, news-like, and social-like) 
 
