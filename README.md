@@ -4,7 +4,7 @@
 
 This repository contains code and data associated with the CLiC-it 2023 paper:
 
-Giovanni Valer, Alan Ramponi and Sara Tonelli. 2023. **When You Doubt, Abstain: A Study of Automated Fact-checking in Italian Under Domain Shift**. In *Proceedings of the Ninth Italian Conference on Computational Linguistics*, Venice, Italy. CEUR.org. [[cite]](#citation) [[paper]](#)
+Giovanni Valer, Alan Ramponi and Sara Tonelli. 2023. **When You Doubt, Abstain: A Study of Automated Fact-checking in Italian Under Domain Shift**. In *Proceedings of the Ninth Italian Conference on Computational Linguistics*, Venice, Italy. CEUR.org. [[cite]](#citation) [[paper]](https://ceur-ws.org/Vol-3596/paper50.pdf)
 
 
 ## Getting started
@@ -64,11 +64,12 @@ If you use or build on top of this work, please cite our paper as follows:
 
 ```
 @inproceedings{valer-etal-2023-when,
-    title = "When You Doubt, Abstain: {A} Study of Automated Fact-checking in {I}talian Under Domain Shift",
-    author = "Valer, Giovanni and Ramponi, Alan and Tonelli, Sara",
-    booktitle = "Proceedings of the Ninth Italian Conference on Computational Linguistics",
-    year = "2023",
-    address = "Venice, Italy",
-    publisher = "CEUR.org"
+    title={When You Doubt, Abstain: {A} Study of Automated Fact-checking in {I}talian Under Domain Shift},
+    author={Valer, Giovanni and Ramponi, Alan and Tonelli, Sara},
+    booktitle={Proceedings of the 9th Italian Conference on Computational Linguistics},
+    publisher={CEUR-ws.org},
+    year={2023},
+    month={november},
+    address={Venice, Italy}
 }
 ```
